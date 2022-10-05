@@ -44,4 +44,21 @@ if(place_meeting(x, y+vsp, obj_Wall))
 
 y += vsp;
 
+//new code for shrinking
+if image_xscale != scale_target {
+  
+    image_xscale = lerp(image_xscale, scale_target, scale_change);
+ 
+} else {
+   
+}
 
+image_yscale = image_xscale;
+
+if walksp != speed_target {
+	
+walksp = lerp(walksp, speed_target, speed_change);
+
+} else {
+   
+}

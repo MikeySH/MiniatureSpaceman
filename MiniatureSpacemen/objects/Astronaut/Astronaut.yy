@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Astronaut",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Main",
+    "path": "sprites/spr_Main/spr_Main.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
