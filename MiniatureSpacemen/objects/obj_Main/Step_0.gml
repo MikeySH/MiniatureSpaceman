@@ -6,12 +6,12 @@
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(vk_up);
 
 //Movement
 var move = key_right - key_left;
 
 hsp = move* walksp;
-
 vsp = vsp + grv;
 
 if(place_meeting(x, y+1, obj_Wall)) &&(key_jump)
@@ -49,16 +49,16 @@ if image_xscale != scale_target {
   
     image_xscale = lerp(image_xscale, scale_target, scale_change);
  
-} else {
-   
 }
 
 image_yscale = image_xscale;
 
-if walksp != speed_target {
+if (walksp != speed_target) {
 	
 walksp = lerp(walksp, speed_target, speed_change);
 
-} else {
-   
+} 
+
+if (grv != max_grv){
+	grv = lerp(grv, max_grv, grv_change);
 }

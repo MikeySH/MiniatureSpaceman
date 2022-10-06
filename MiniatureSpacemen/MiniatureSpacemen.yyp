@@ -12,7 +12,6 @@
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":4,},
     {"id":{"name":"spr_Main","path":"sprites/spr_Main/spr_Main.yy",},"order":2,},
     {"id":{"name":"spr_TestBackground","path":"sprites/spr_TestBackground/spr_TestBackground.yy",},"order":6,},
-    {"id":{"name":"Object2","path":"objects/Object2/Object2.yy",},"order":1,},
     {"id":{"name":"spr_TestPickup","path":"sprites/spr_TestPickup/spr_TestPickup.yy",},"order":3,},
     {"id":{"name":"spr_Warp","path":"sprites/spr_Warp/spr_Warp.yy",},"order":5,},
     {"id":{"name":"obj_TestPickup","path":"objects/obj_TestPickup/obj_TestPickup.yy",},"order":6,},
