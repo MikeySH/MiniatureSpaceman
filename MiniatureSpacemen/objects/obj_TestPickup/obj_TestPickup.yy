@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_TestPickup",
   "spriteId": {
-    "name": "spr_TestPickup",
-    "path": "sprites/spr_TestPickup/spr_TestPickup.yy",
+    "name": "spr_Pills",
+    "path": "sprites/spr_Pills/spr_Pills.yy",
   },
   "solid": false,
   "visible": true,
