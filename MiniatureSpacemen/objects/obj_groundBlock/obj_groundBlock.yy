@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Temperature",
-  "spriteId": null,
+  "name": "obj_groundBlock",
+  "spriteId": {
+    "name": "spr_groundblock_short",
+    "path": "sprites/spr_groundblock_short/spr_groundblock_short.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,9 +24,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
