@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_groundBlock",
   "spriteId": {
-    "name": "Sprite9",
-    "path": "sprites/Sprite9/Sprite9.yy",
+    "name": "spr_groundblock_short",
+    "path": "sprites/spr_groundblock_short/spr_groundblock_short.yy",
   },
   "solid": false,
   "visible": true,

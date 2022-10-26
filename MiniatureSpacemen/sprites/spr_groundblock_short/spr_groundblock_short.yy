@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite9",
+  "name": "spr_groundblock_short",
   "bboxMode": 2,
   "collisionKind": 5,
   "type": 0,
@@ -27,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47b29b65-9d4a-4d98-8a1f-de68fc77ab25",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"284b6324-374c-4b60-8fb3-79eff4b9c974",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite9",
+    "name": "spr_groundblock_short",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -44,7 +44,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"533e9fe8-ebb8-44e5-83b9-c411da4af68e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47b29b65-9d4a-4d98-8a1f-de68fc77ab25","path":"sprites/Sprite9/Sprite9.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9655954e-50d7-46d9-b61f-5a843631fa48","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"284b6324-374c-4b60-8fb3-79eff4b9c974","path":"sprites/spr_groundblock_short/spr_groundblock_short.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -91,7 +91,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "MiniatureSpacemen",
-    "path": "MiniatureSpacemen.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }
