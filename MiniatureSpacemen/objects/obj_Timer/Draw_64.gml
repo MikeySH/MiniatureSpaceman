@@ -1,6 +1,6 @@
 //draw_text(30, 30, string("Time Left : ") + string(countdown));
 
-draw_set_font(fnt_Test);
+draw_set_font(fnt_Text);
 
 draw_set_colour($FFFFFFFF & $ffffff);
 var l53CA88D3_0=($FFFFFFFF >> 24);
