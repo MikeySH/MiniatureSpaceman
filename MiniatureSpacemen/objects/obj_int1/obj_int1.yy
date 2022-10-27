@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_TestPickup",
+  "name": "obj_int1",
   "spriteId": {
-    "name": "spr_Pills",
-    "path": "sprites/spr_Pills/spr_Pills.yy",
+    "name": "Sprite18",
+    "path": "sprites/Sprite18/Sprite18.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Inter",
+    "path": "folders/Objects/Inter.yy",
   },
 }

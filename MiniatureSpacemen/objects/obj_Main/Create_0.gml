@@ -6,6 +6,8 @@ vsp = 0;	//Verticle Speed
 grv = 0.7;		//Gravity
 walksp = 6;		//Walk Speed
 
+isfreezed = false;
+
 /*imagex_original = 1;
 imagey_original = 1;
 
