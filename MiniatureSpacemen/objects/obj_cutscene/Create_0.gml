@@ -16,6 +16,5 @@ textProgress = 0;
 seconds = 2;
 secondsInFrames = seconds * 60;
 
-instance_deactivate_all(true);
-layer_set_visible("Instances", false);
 alarm_set(0, secondsInFrames);
+layer_set_visible("Instances", false);
