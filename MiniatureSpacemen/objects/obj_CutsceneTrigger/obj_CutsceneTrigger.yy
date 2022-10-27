@@ -1,13 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Astronaut",
-  "spriteId": {
-    "name": "spr_Main",
-    "path": "sprites/spr_Main/spr_Main.yy",
-  },
+  "name": "obj_CutsceneTrigger",
+  "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
