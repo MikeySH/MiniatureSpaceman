@@ -3,7 +3,8 @@
   "resourceVersion": "1.6",
   "name": "MiniatureSpacemen",
   "resources": [
-    {"id":{"name":"obj_CutsceneTrigger","path":"objects/obj_CutsceneTrigger/obj_CutsceneTrigger.yy",},"order":16,},
+    {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"order":16,},
+    {"id":{"name":"obj_trigger","path":"objects/obj_trigger/obj_trigger.yy",},"order":17,},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"order":4,},
     {"id":{"name":"obj_Main","path":"objects/obj_Main/obj_Main.yy",},"order":5,},
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":8,},
@@ -26,6 +27,7 @@
     {"id":{"name":"spr_cutscene_still1","path":"sprites/spr_cutscene_still1/spr_cutscene_still1.yy",},"order":13,},
     {"id":{"name":"fnt_Text","path":"fonts/fnt_Text/fnt_Text.yy",},"order":0,},
     {"id":{"name":"spr_groundblock_short","path":"sprites/spr_groundblock_short/spr_groundblock_short.yy",},"order":8,},
+    {"id":{"name":"spr_trigger","path":"sprites/spr_trigger/spr_trigger.yy",},"order":15,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":3,},
     {"id":{"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},"order":1,},
     {"id":{"name":"scr_menu","path":"scripts/scr_menu/scr_menu.yy",},"order":3,},
@@ -49,7 +51,7 @@
     {"name":"Linux","path":"options/linux/options_linux.yy",},
     {"name":"macOS","path":"options/mac/options_mac.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
