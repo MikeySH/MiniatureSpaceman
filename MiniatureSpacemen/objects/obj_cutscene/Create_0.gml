@@ -17,4 +17,6 @@ seconds = 2;
 secondsInFrames = seconds * 60;
 
 alarm_set(0, secondsInFrames);
-layer_set_visible("Instances", false);
+
+
+//layer_set_visible("Instances", false);
