@@ -32,3 +32,12 @@ button_state = "null";
 f_riction = 0.9;
 acceleration = 25;
 max_speed = 100;
+
+
+//Tile set Collision
+
+layerID = layer_get_id("Tiles");
+tiles = layer_tilemap_get_id(layerID);
+
+
+

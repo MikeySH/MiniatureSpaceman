@@ -27,6 +27,7 @@
     {"id":{"name":"obj_int1","path":"objects/obj_int1/obj_int1.yy",},"order":0,},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":1,},
     {"id":{"name":"spr_cutscene_still1","path":"sprites/spr_cutscene_still1/spr_cutscene_still1.yy",},"order":13,},
+    {"id":{"name":"Tiles","path":"tilesets/Tiles/Tiles.yy",},"order":0,},
     {"id":{"name":"fnt_Text","path":"fonts/fnt_Text/fnt_Text.yy",},"order":0,},
     {"id":{"name":"spr_groundblock_short","path":"sprites/spr_groundblock_short/spr_groundblock_short.yy",},"order":8,},
     {"id":{"name":"spr_trigger","path":"sprites/spr_trigger/spr_trigger.yy",},"order":15,},

@@ -82,14 +82,25 @@ if(place_meeting(x, y+1, obj_Wall)) &&(key_jump)
 
 
 //Horizontal Collision
-if(place_meeting(x+hsp,y, obj_Wall))
-{
-	while(!place_meeting(x+sign(hsp), y, obj_Wall))
-	{
-		x += sign(hsp);
-	}
-	hsp = 0 ;
+if(tilemap_get_at_pixel(tiles, bbox_bottom,y) !=0)
+{ 
+
+	vsp = 0;
+
 }
+
+
+
+
+
+//if(place_meeting(x+hsp,y, obj_Wall))
+//{
+	//while(!place_meeting(x+sign(hsp), y, obj_Wall))
+	//{
+		//x += sign(hsp);
+	//}
+	//hsp = 0 ;
+//}
 
 // move in x direction by hsp amount
 x += hsp
@@ -104,6 +115,10 @@ if(place_meeting(x, y+vsp, obj_Wall))
 	}
 	vsp = 0;
 }
+
+
+
+
 
 // move in y direction by vsp amount
 y += vsp;
@@ -126,3 +141,5 @@ image_yscale = image_xscale;*/
 //if (grv != max_grv){
 //	grv = lerp(grv, max_grv, grv_change);
 //}
+
+

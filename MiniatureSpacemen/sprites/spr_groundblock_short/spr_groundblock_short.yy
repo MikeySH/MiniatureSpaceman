@@ -78,7 +78,7 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 1,
-    "enabled": true,
+    "enabled": false,
     "tileMode": [
       1,
       0,
