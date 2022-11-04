@@ -14,9 +14,6 @@ if(isfreezed != true)
 	if(key_left || key_right)
 	{
 		tap_timer = 0.1;
-		//if tap_timer > 0 {
-		//	walksp += 1;
-		//}
 	}
 
 	if(key_left_held || key_right_held)
@@ -45,6 +42,7 @@ if(isfreezed != true)
 	else if (button_state == "pressed")
 	{
 		walksp *= 5; // reset walk_sp to whatever it was before
+		
 	}	
 	
 	//key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
@@ -59,6 +57,14 @@ if(isfreezed != true)
 	if dir != 0 {
 		if (dir == 1) hsp = min(max_speed, hsp + acceleration); //accelerate going right
 		if (dir == -1) hsp = max(-max_speed, hsp - acceleration); //accelerate going left
+
+		switch (image_index) {
+			case 0: //standing
+			case 1: image_index++; break; //walk 1
+			case 2: image_index = 1; break; //walk 2
+			case 3: break; //jump sprite
+		}
+
 	}    
 	else 
 	{
@@ -75,32 +81,42 @@ else if(isfreezed = true)
 	hsp = 0;
 }
 
-if(place_meeting(x, y+1, obj_Wall)) &&(key_jump)
-{
-	vsp = -15;
-}
-
 
 //Horizontal Collision
-if(tilemap_get_at_pixel(tiles, bbox_bottom,y) !=0)
+if(tilemap_get_at_pixel(tiles,x,y) !=0)
 { 
-
+	while(tilemap_get_at_pixel(tiles, x, y) == 0)
+	{
+		y += sign(vsp);
+	}
 	vsp = 0;
+}
 
+if(tilemap_get_at_pixel(tiles,x,y) !=0) &&(key_jump)
+{
+	vsp = -20;
+	image_index = 0;
 }
 
 
 
 
+//Vertical Collision
 
-//if(place_meeting(x+hsp,y, obj_Wall))
-//{
-	//while(!place_meeting(x+sign(hsp), y, obj_Wall))
-	//{
-		//x += sign(hsp);
-	//}
-	//hsp = 0 ;
-//}
+
+
+
+if(place_meeting(x+hsp,y, obj_Wall))
+{
+	while(!place_meeting(x+sign(hsp), y, obj_Wall))
+	{
+		x += sign(hsp);
+		}
+	hsp = 0 ;
+}
+
+
+
 
 // move in x direction by hsp amount
 x += hsp
