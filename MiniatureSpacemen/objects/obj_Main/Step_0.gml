@@ -11,10 +11,19 @@ if(isfreezed != true)
 	key_left_held = keyboard_check(vk_left) or keyboard_check(ord("A"));
 	key_right_held = keyboard_check(vk_right) or keyboard_check(ord("D"));
 
-	if(key_left || key_right)
+	if(key_left)
 	{
 		tap_timer = 0.1;
+		left_idle_timer = 0;
+		right_idle_timer = idle_time_to_wait + 1;
 	}
+	
+	if (key_right)
+	{
+		tap_timer = 0.1;
+		right_idle_timer = 0;
+		left_idle_timer = idle_time_to_wait + 1;
+	}	
 
 	if(key_left_held || key_right_held)
 	{
@@ -34,36 +43,51 @@ if(isfreezed != true)
 		button_state = "null";
 	}
 	
-	if (button_state == "held")
-	{
-		walksp = 6;
-		//tap_timer = 0;
-	} 
-	else if (button_state == "pressed")
-	{
-		walksp *= 5; // reset walk_sp to whatever it was before
-		
-	}	
+	//if (button_state == "held")
+	//{
+	//	walksp = 6;
+	//	//tap_timer = 0;
+	//} 
+	//else if (button_state == "pressed")
+	//{
+	//	walksp *= 5; // reset walk_sp to whatever it was before		
+	//}
 	
-	//key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
-	//key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up) or keyboard_check(ord("W"));
 
 	var dir = key_right - key_left;
-	//hsp = dir * walksp;
 	vsp = vsp + grv;
 	
 	// momentum
 	if dir != 0 {
-		if (dir == 1) hsp = min(max_speed, hsp + acceleration); //accelerate going right
-		if (dir == -1) hsp = max(-max_speed, hsp - acceleration); //accelerate going left
-
-		switch (image_index) {
-			case 0: //standing
-			case 1: image_index++; break; //walk 1
-			case 2: image_index = 1; break; //walk 2
-			case 3: break; //jump sprite
+		
+		// if dir is right
+		if (dir == 1)
+		{
+			hsp = min(max_speed, hsp + acceleration); //accelerate going right
+			switch (image_index) {
+				case 0: //standing left
+				case 1: image_index++; break; //walk 1
+				case 2: image_index = 1; break; //walk 2
+				case 6: break; //jump sprite
+				
+			}
 		}
+		
+		// if dir is left
+		if (dir == -1)
+		{
+			hsp = max(-max_speed, hsp - acceleration); //accelerate going left
+			switch (image_index) {
+				case 0: // if left-facing, do nothing
+				case 1: // do nothing
+				case 2: // do nothing
+				case 3: //standing right
+				case 4: image_index++; break; //walk 1
+				case 5: image_index = 4; break; //walk 2
+				case 6: break; //jump sprite
+			}
+		}		
 
 	}    
 	else 
@@ -92,19 +116,14 @@ if(tilemap_get_at_pixel(tiles,x,y) !=0)
 	vsp = 0;
 }
 
+// jump
 if(tilemap_get_at_pixel(tiles,x,y) !=0) &&(key_jump)
 {
 	vsp = -20;
 	image_index = 0;
 }
 
-
-
-
-//Vertical Collision
-
-
-
+//Vertical Collisiom
 
 if(place_meeting(x+hsp,y, obj_Wall))
 {
@@ -114,8 +133,6 @@ if(place_meeting(x+hsp,y, obj_Wall))
 		}
 	hsp = 0 ;
 }
-
-
 
 
 // move in x direction by hsp amount
@@ -134,28 +151,5 @@ if(place_meeting(x, y+vsp, obj_Wall))
 
 
 
-
-
 // move in y direction by vsp amount
 y += vsp;
-
-//new code for shrinking
-/*if image_xscale != scale_target {
-  
-    image_xscale = lerp(image_xscale, scale_target, scale_change);
- 
-}
-
-image_yscale = image_xscale;*/
-
-//if (walksp != speed_target) {
-	
-//walksp = lerp(walksp, speed_target, speed_change);
-
-//} 
-
-//if (grv != max_grv){
-//	grv = lerp(grv, max_grv, grv_change);
-//}
-
-
