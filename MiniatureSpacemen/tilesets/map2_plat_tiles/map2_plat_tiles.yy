@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "Tiles",
+  "name": "map2_plat_tiles",
   "spriteId": {
     "name": "spr_groundblock_short",
     "path": "sprites/spr_groundblock_short/spr_groundblock_short.yy",

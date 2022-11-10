@@ -1,7 +1,7 @@
-/// @description
+/// @description 
 // You can write your code in this editor
 
-with (other)
+with(other)
 {
 	instance_destroy();
 }

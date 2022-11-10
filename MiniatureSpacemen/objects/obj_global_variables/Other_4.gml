@@ -1,3 +1,2 @@
-/// @description trigger for cutscenes
+/// @description Set Global Variables
 // You can write your code in this editor
-
