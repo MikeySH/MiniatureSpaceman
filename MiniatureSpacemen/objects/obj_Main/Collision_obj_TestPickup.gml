@@ -12,7 +12,6 @@ with(other)
 	obj_Main.grv = 0.7;
 	obj_Main.walksp = 6;
 	
-	//obj_Main.image_xscale = 1;
 	instance_destroy();
 }
 
