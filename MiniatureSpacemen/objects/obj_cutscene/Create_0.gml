@@ -2,6 +2,9 @@
 // You can write your code in this editor
 //Utilize your lines/variables
 
+// create a new text object
+instance_create_layer(room_width/ 2, room_height/ 2, "Cutscenes", obj_Text);
+
 x1 = RESELUTION_W/2;
 y1 = 0;
 x2 = RESOLUTION_H/2;

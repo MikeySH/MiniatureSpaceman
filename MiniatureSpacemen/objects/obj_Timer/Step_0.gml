@@ -4,7 +4,6 @@
 if (countdown == 0)
 {
 	room_restart();
-
 }
 
 
