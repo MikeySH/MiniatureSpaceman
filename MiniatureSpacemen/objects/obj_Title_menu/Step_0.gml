@@ -13,5 +13,8 @@ if y_select != 0 {
 //interaction
 if keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) {
 	scr_menu(y_pos);
+	instance_destroy();
+	instance_destroy(spr_menu);
+	
 }
 

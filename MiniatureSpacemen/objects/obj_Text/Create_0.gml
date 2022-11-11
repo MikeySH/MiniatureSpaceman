@@ -12,6 +12,16 @@ x2Target = RESELUTION_W;
 lerpProgress = 0;
 textProgress = 0;
 
-message = "Default text message"
+if (argument_count == 0)
+{
+	message = "Default text message"
+} 
+else
+{	
+	message = argument0;
+	input_text = argument0;
+}
+	
+
 
 

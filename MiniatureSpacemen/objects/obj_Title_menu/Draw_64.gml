@@ -11,4 +11,3 @@ for (i=0; i<= op_length; i++) {
 }
 draw_set_halign(fa_left);
 
-
