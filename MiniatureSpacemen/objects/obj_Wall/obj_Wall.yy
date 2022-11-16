@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Wall",
   "spriteId": {
-    "name": "spr_Wall",
-    "path": "sprites/spr_Wall/spr_Wall.yy",
+    "name": "spr_map1_ground",
+    "path": "sprites/spr_map1_ground/spr_map1_ground.yy",
   },
   "solid": false,
   "visible": true,
