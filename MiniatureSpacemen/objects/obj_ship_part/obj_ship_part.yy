@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ship_part",
   "spriteId": {
-    "name": "spr_score_placeholder",
-    "path": "sprites/spr_score_placeholder/spr_score_placeholder.yy",
+    "name": "spr_ship_parts",
+    "path": "sprites/spr_ship_parts/spr_ship_parts.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
   ],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"score_parent_instance","varType":4,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"ship_sprite_index","varType":1,"value":"2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
