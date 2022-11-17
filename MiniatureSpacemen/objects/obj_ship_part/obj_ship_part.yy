@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ship_part",
   "spriteId": {
-    "name": "spr_goal",
-    "path": "sprites/spr_goal/spr_goal.yy",
+    "name": "spr_score_placeholder",
+    "path": "sprites/spr_score_placeholder/spr_score_placeholder.yy",
   },
   "solid": false,
   "visible": true,
