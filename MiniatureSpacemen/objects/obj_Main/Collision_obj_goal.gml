@@ -4,8 +4,7 @@
 
 with(other)
 {
-	game_end();
-	
+	game_end();	
 }
 
 
