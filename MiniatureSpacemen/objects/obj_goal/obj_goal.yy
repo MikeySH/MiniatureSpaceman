@@ -7,7 +7,7 @@
     "path": "sprites/spr_goal/spr_goal.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
