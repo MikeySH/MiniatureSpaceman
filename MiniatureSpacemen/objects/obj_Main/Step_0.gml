@@ -92,6 +92,7 @@ if(tilemap_get_at_pixel(tiles,x,y) !=0)
 if((tilemap_get_at_pixel(tiles,x,y)!=0) && (key_jump))
 {
 	vsp = -20;
+	audio_play_sound(sJump,100,false);
 	switch (image_index) {
 		case 0: // go to next case
 		case 1: // go to next case

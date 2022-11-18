@@ -4,4 +4,5 @@
 with(other)
 {
 	instance_destroy();
+	audio_play_sound(sCollection,100,false);
 }
