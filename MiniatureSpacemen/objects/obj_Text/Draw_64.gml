@@ -7,6 +7,18 @@ draw_set_color(c_black);
 
 var _print = string_copy(message, 1, textProgress);
 
-draw_text((x1+x2)/2, y1+40, _print);
-draw_set_color(c_white)
-draw_text((x1+x2)/2, y1+43, _print);
+
+if (!hasSkipped)
+{
+	draw_text((x1+x2)/2, y1+40, _print);
+	draw_set_color(c_white)
+	draw_text((x1+x2)/2, y1+43, _print);
+} 
+else 
+{
+	draw_text((x1+x2)/2, y1+40, message);
+	draw_set_color(c_white)
+	draw_text((x1+x2)/2, y1+43, message);	
+}
+	
+
