@@ -74,6 +74,7 @@ else // if in a cutscene or dialogue, restrict movement
 	key_right = 0;
 	key_jump = 0;
 	hsp = 0;
+	vsp = 20;
 }
 
 
