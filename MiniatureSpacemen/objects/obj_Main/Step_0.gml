@@ -109,10 +109,10 @@ if((tilemap_get_at_pixel(tiles,x,y)!=0) && (key_jump))
 // If player will hit into wall, stop movement
 if(place_meeting(x+hsp, y, obj_Wall))
 {
-	//while(!place_meeting(x+sign(hsp), y, obj_Wall))
-	//{
-	//	x += sign(hsp);
-	//}
+	while(!place_meeting(x+sign(hsp), y, obj_Wall))
+	{
+		x += sign(hsp);
+	}
 	hsp = 0;
 } 
 else // otherwise, keep moving
@@ -125,10 +125,10 @@ else // otherwise, keep moving
 // If player will hit into wall, stop movement
 if(place_meeting(x, y+vsp, obj_Wall))
 {
-	//while(!place_meeting(x, y+sign(vsp), obj_Wall))
-	//{
-	//	y += sign(vsp);
-	//}
+	while(!place_meeting(x, y+sign(vsp), obj_Wall))
+	{
+		y += sign(vsp);
+	}
 	vsp = 0;
 }
 else // otherwise, keep moving
