@@ -74,14 +74,14 @@ else // if in a cutscene or dialogue, restrict movement
 	key_right = 0;
 	key_jump = 0;
 	hsp = 0;
-	vsp = 20;
+	vsp += grv;
 }
 
 
 // Vertical Collision with tiles
-if(tilemap_get_at_pixel(tiles,x,y) !=0)
+if(tilemap_get_at_pixel(tiles,x,y+vsp) != 0)
 { 
-	while(tilemap_get_at_pixel(tiles, x, y) == 0)
+	while(tilemap_get_at_pixel(tiles,x,y) == 0)
 	{
 		y += sign(vsp);
 	}
@@ -113,11 +113,11 @@ if(place_meeting(x+hsp, y, obj_Wall))
 	//{
 	//	x += sign(hsp);
 	//}
-	hsp = 0 ;
+	hsp = 0;
 } 
 else // otherwise, keep moving
 {
-	x += hsp
+	x += hsp;
 }
 
 

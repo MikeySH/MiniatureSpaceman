@@ -76,7 +76,6 @@
     {"id":{"name":"obj_level3BGM","path":"objects/obj_level3BGM/obj_level3BGM.yy",},"order":3,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":0,},
     {"id":{"name":"obj_groundBlock","path":"objects/obj_groundBlock/obj_groundBlock.yy",},"order":11,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
     {"id":{"name":"obj_Level1BGM","path":"objects/obj_Level1BGM/obj_Level1BGM.yy",},"order":0,},
     {"id":{"name":"spr_Map1","path":"sprites/spr_Map1/spr_Map1.yy",},"order":10,},
     {"id":{"name":"map2_ground_tiles","path":"tilesets/map2_ground_tiles/map2_ground_tiles.yy",},"order":3,},
@@ -106,7 +105,6 @@
     {"roomId":{"name":"level2_part2","path":"rooms/level2_part2/level2_part2.yy",},},
     {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"roomId":{"name":"level3_part2","path":"rooms/level3_part2/level3_part2.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
