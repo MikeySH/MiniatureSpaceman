@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_trigger",
+  "name": "obj_cutscene_trigger",
   "spriteId": {
     "name": "spr_trigger",
     "path": "sprites/spr_trigger/spr_trigger.yy",
