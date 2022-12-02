@@ -140,3 +140,22 @@ else // otherwise, keep moving
 // Prevent going outside of room
 x = clamp(x,0, room_width);
 y= clamp(y,0,room_height);
+
+//Moiving Platform collisions
+var _obj_moving_plat = instance_place(x, y+max(1, vsp), obj_moving_plat);
+if (_obj_moving_plat && bbox_bottom <= _obj_moving_plat.bbox_top)
+{
+	if(vsp > 0)
+	{
+		while(!place_meeting(x,y+sign(vsp),obj_moving_plat))
+		{
+			y+= sign(vsp);
+		}
+		vsp = 0;
+	}
+	x+= _obj_moving_plat.hsp;
+	y+= _obj_moving_plat.vsp;
+}
+
+
+
