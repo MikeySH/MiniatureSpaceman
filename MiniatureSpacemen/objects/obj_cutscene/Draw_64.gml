@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (room != Menu)
+if (room != Menu && room != End_Menu)
 {
 	draw_sprite_stretched(cutscene_still, 0, x1,y1,x2-x1,y2-y1);
 }
