@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-xx = display_get_gui_width()/2;
+xx = display_get_gui_width()/3;
 yy = 250;
 draw_set_font(fnt_Text);
 draw_set_halign(fa_center);

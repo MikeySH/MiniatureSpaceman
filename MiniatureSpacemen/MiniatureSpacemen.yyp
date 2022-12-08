@@ -27,6 +27,7 @@
     {"id":{"name":"sCollection","path":"sounds/sCollection/sCollection.yy",},"order":5,},
     {"id":{"name":"spr_Map1_continuous","path":"sprites/spr_Map1_continuous/spr_Map1_continuous.yy",},"order":11,},
     {"id":{"name":"Sprite30","path":"sprites/Sprite30/Sprite30.yy",},"order":16,},
+    {"id":{"name":"spr_Title_Screen","path":"sprites/spr_Title_Screen/spr_Title_Screen.yy",},"order":33,},
     {"id":{"name":"level3_part2","path":"rooms/level3_part2/level3_part2.yy",},"order":7,},
     {"id":{"name":"sJump","path":"sounds/sJump/sJump.yy",},"order":4,},
     {"id":{"name":"obj_Level2BGM","path":"objects/obj_Level2BGM/obj_Level2BGM.yy",},"order":2,},
