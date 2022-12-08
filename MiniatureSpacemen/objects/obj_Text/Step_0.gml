@@ -20,6 +20,11 @@ if(keyboard_check_pressed(vk_anykey) && !(any_movement_key || keyboard_check_pre
 		textProgress = _messageLength;
 		instance_destroy();
 		obj_Main.isfreezed = false;
+		
+		if(isEnd){
+			isEnd = false;
+			room_goto(End_Menu);
+		}
 	}	
 	hasSkipped = true;
 }

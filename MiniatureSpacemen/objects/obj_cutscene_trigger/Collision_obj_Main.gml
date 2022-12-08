@@ -6,6 +6,7 @@ var textObject = instance_create_layer(room_width/ 2, room_height/ 2, "Cutscenes
 with (textObject)
 {
     textObject.message = other.cutscene_text;
+	textObject.isEnd = other.isEnd;
 }
 
 var cutsceneObject = instance_create_layer(room_width/ 2, room_height/ 2, "Cutscenes", obj_cutscene,);

@@ -16,6 +16,7 @@
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},"order":0,},
     {"id":{"name":"CollisionTIle","path":"tilesets/CollisionTIle/CollisionTIle.yy",},"order":1,},
     {"id":{"name":"level1_part2","path":"rooms/level1_part2/level1_part2.yy",},"order":6,},
+    {"id":{"name":"spr_ending_still","path":"sprites/spr_ending_still/spr_ending_still.yy",},"order":32,},
     {"id":{"name":"obj_score","path":"objects/obj_score/obj_score.yy",},"order":22,},
     {"id":{"name":"spr_Map3_END","path":"sprites/spr_Map3_END/spr_Map3_END.yy",},"order":28,},
     {"id":{"name":"sMenuBGM","path":"sounds/sMenuBGM/sMenuBGM.yy",},"order":0,},
