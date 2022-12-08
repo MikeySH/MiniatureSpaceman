@@ -4,7 +4,7 @@
 
 with(other)
 {
-	game_end();	
+	room_goto(roomName);
 }
 
 

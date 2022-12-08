@@ -20,6 +20,8 @@ secondsInFrames = seconds * 60;
 
 cutscene_still = argument0;
 
+hasSkipped = false; // if player presses key to skip text
+
 //alarm_set(0, secondsInFrames);
 
 

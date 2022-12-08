@@ -1,12 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if room == Menu{}
-
-else{
-
-draw_sprite_stretched(cutscene_still, 0, x1,y1,x2-x1,y2-y1);
-
+if (room != Menu && room != End_Menu)
+{
+	draw_sprite_stretched(cutscene_still, 0, x1,y1,x2-x1,y2-y1);
 }
 
 draw_set_font(fnt_Text);

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ship_part",
   "spriteId": {
-    "name": "spr_score_placeholder",
-    "path": "sprites/spr_score_placeholder/spr_score_placeholder.yy",
+    "name": "spr_parts",
+    "path": "sprites/spr_parts/spr_parts.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,9 +27,11 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Main","path":"objects/obj_Main/obj_Main.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"score_parent_instance","varType":4,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"part_image_index","varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {

@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_int1",
-  "spriteId": {
-    "name": "Sprite18",
-    "path": "sprites/Sprite18/Sprite18.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

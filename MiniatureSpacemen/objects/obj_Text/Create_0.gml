@@ -12,6 +12,8 @@ x2Target = RESELUTION_W;
 lerpProgress = 0;
 textProgress = 0;
 
+hasSkipped = false; // if player presses key to skip text
+
 if (argument_count == 0)
 {
 	message = "Default text message"

@@ -74,13 +74,14 @@ else // if in a cutscene or dialogue, restrict movement
 	key_right = 0;
 	key_jump = 0;
 	hsp = 0;
+	vsp += grv;
 }
 
 
 // Vertical Collision with tiles
-if(tilemap_get_at_pixel(tiles,x,y) !=0)
+if(tilemap_get_at_pixel(tiles,x,y+vsp) != 0)
 { 
-	while(tilemap_get_at_pixel(tiles, x, y) == 0)
+	while(tilemap_get_at_pixel(tiles,x,y) == 0)
 	{
 		y += sign(vsp);
 	}
@@ -92,6 +93,7 @@ if(tilemap_get_at_pixel(tiles,x,y) !=0)
 if((tilemap_get_at_pixel(tiles,x,y)!=0) && (key_jump))
 {
 	vsp = -20;
+	audio_play_sound(sJump,100,false);
 	switch (image_index) {
 		case 0: // go to next case
 		case 1: // go to next case
@@ -107,15 +109,15 @@ if((tilemap_get_at_pixel(tiles,x,y)!=0) && (key_jump))
 // If player will hit into wall, stop movement
 if(place_meeting(x+hsp, y, obj_Wall))
 {
-	//while(!place_meeting(x+sign(hsp), y, obj_Wall))
-	//{
-	//	x += sign(hsp);
-	//}
-	hsp = 0 ;
+	while(!place_meeting(x+sign(hsp), y, obj_Wall))
+	{
+		x += sign(hsp);
+	}
+	hsp = 0;
 } 
 else // otherwise, keep moving
 {
-	x += hsp
+	x += hsp;
 }
 
 
@@ -123,10 +125,10 @@ else // otherwise, keep moving
 // If player will hit into wall, stop movement
 if(place_meeting(x, y+vsp, obj_Wall))
 {
-	//while(!place_meeting(x, y+sign(vsp), obj_Wall))
-	//{
-	//	y += sign(vsp);
-	//}
+	while(!place_meeting(x, y+sign(vsp), obj_Wall))
+	{
+		y += sign(vsp);
+	}
 	vsp = 0;
 }
 else // otherwise, keep moving
@@ -138,3 +140,22 @@ else // otherwise, keep moving
 // Prevent going outside of room
 x = clamp(x,0, room_width);
 y= clamp(y,0,room_height);
+
+//Moiving Platform collisions
+var _obj_moving_plat = instance_place(x, y+max(1, vsp), obj_moving_plat);
+if (_obj_moving_plat && bbox_bottom <= _obj_moving_plat.bbox_top)
+{
+	if(vsp > 0)
+	{
+		while(!place_meeting(x,y+sign(vsp),obj_moving_plat))
+		{
+			y+= sign(vsp);
+		}
+		vsp = 0;
+	}
+	x+= _obj_moving_plat.hsp;
+	y+= _obj_moving_plat.vsp;
+}
+
+
+

@@ -14,5 +14,9 @@ any_movement_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_do
 
 if(keyboard_check_pressed(vk_anykey) && !(any_movement_key || keyboard_check_pressed(vk_escape)))
 {
-	instance_destroy();
+	if (hasSkipped)
+	{
+		instance_destroy();
+	}
+	hasSkipped = true;
 }

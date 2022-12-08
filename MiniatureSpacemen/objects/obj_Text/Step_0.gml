@@ -1,5 +1,5 @@
 lerpProgress += (1- lerpProgress) / 50;
-textProgress += 0.3;
+textProgress += 0.5;
 
 x1 = lerp(x1,x1Target,lerpProgress);
 x2 = lerp(x2,x2Target,lerpProgress);
@@ -13,14 +13,15 @@ any_movement_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_do
 
 // if any key is pressed that is not a movement key or escape key
 if(keyboard_check_pressed(vk_anykey) && !(any_movement_key || keyboard_check_pressed(vk_escape)))
-{
-	//var _messageLength = string_length(message);
-	//if(textProgress >= _messageLength)
-	//{
-		
-	//}	
-	instance_destroy();
-	obj_Main.isfreezed = false;
+{	
+	if(hasSkipped)
+	{
+		var _messageLength = string_length(message);
+		textProgress = _messageLength;
+		instance_destroy();
+		obj_Main.isfreezed = false;
+	}	
+	hasSkipped = true;
 }
 
 
