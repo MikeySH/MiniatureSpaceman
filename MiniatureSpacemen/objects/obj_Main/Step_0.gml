@@ -90,7 +90,7 @@ if(tilemap_get_at_pixel(tiles,x,y+vsp) != 0)
 
 
 // Jump
-if((tilemap_get_at_pixel(tiles,x,y)!=0) && (key_jump))
+if(((tilemap_get_at_pixel(tiles,x,y)!=0) or place_meeting(x, y+vsp, obj_Wall)) && (key_jump))
 {
 	vsp = -20;
 	audio_play_sound(sJump,100,false);
@@ -107,9 +107,9 @@ if((tilemap_get_at_pixel(tiles,x,y)!=0) && (key_jump))
 
 // Horizontal Collision with wall
 // If player will hit into wall, stop movement
-if(place_meeting(x+hsp, y, obj_Wall))
+if(place_meeting(x+hsp, y, obj_Wall) )
 {
-	while(!place_meeting(x+sign(hsp), y, obj_Wall))
+	while(!place_meeting(x+sign(hsp), y, obj_Wall) )
 	{
 		x += sign(hsp);
 	}
@@ -119,6 +119,7 @@ else // otherwise, keep moving
 {
 	x += hsp;
 }
+
 
 
 // Verticle Collision with wall
@@ -135,7 +136,6 @@ else // otherwise, keep moving
 {
 	y += vsp;
 }
-
 
 // Prevent going outside of room
 x = clamp(x,0, room_width);
